@@ -5,6 +5,7 @@ public class Basic {
     public static void main(String[] args) {
         ascendingSort();
         descendingSort1();
+        descendingSort2();
     }
 
     private static void ascendingSort() {
@@ -17,6 +18,20 @@ public class Basic {
         Integer[] A = {5, 4, 3, 2, 1};
         Arrays.sort(A, Collections.reverseOrder()); // 내림차순 정렬
         System.out.println(Arrays.toString(A));
+    }
+
+    private static void descendingSort2() {
+        int[] A = {5, 3, 2, 1, 4};
+        negate(A); // 부호 반전
+        Arrays.sort(A);
+        negate(A); // 부호 반전
+        System.out.println(Arrays.toString(A));
+    }
+
+    private static void negate(int[] temp) {
+        for (int i = 0; i < temp.length; i++) {
+            temp[i] *= -1;
+        }
     }
 }
 
