@@ -3,7 +3,7 @@ package basic;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class Basic {
+public class 정렬 {
     public static void main(String[] args) {
         ascendingSort();
         descendingSort1();
